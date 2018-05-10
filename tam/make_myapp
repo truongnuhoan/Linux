@@ -1,0 +1,12 @@
+myapp: toanhoc.o gt.o tongchan.o tongle.o luythua.o
+	gcc -o myapp toanhoc.o gt.o tongchan.o tongle.o luythua.o
+toanhoc.o: toanhoc.c libmymath.a
+	gcc -c toanhoc.c
+gt.o: gt.c
+	gcc -c gt.c
+tongchan.o: tongchan.c
+	gcc -c tongchan.c
+tongle.o: tongle.c
+	gcc -c tongle.c
+luythua.o: luythua.c
+	gcc -c luythua.c
